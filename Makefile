@@ -6,7 +6,7 @@ PKGCONFIG := $(shell type -p pkg-config || echo NONE)
 
 ifeq ($(PKGCONFIG), NONE)
 # Hard code paths if necessary
-ZLIB_PATH = /usr
+ZLIB_PATH = /usr/lib
 ZLIB_INC = -I$(ZLIB_PATH)/include
 ZLIB_LIB = -L$(ZLIB_PATH)/lib -lz
 else
